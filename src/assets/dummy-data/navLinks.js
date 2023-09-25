@@ -1,8 +1,20 @@
+import { FaList, FaUsersLine } from "react-icons/fa6";
+
 const navLinks = [
   {
+    path: "/book-appointment",
+    icon: <FaUsersLine  size={20}/>,
+    display: "Book Appointment",
+    role: "ROLE_USER"
+
+  },
+
+  {
     path: "/dashboard",
-    icon: "ri-apps-2-line",
-    display: "Dashboard",
+    icon: <FaList  size={20}/>,
+    display: "My Appointments",
+    role: "ROLE_USER"
+
   },
   {
     path: "/bookings",
